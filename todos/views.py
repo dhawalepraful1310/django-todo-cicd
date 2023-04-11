@@ -17,7 +17,7 @@ def add(request):
 
     return redirect 'todos:index'
 
-def delete(request, todo_id):
+def delete(todo_id):
     todo = get_object_or_404(Todo, pk=todo_id)
     todo.delete()
 
